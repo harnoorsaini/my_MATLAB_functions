@@ -10,16 +10,16 @@ function dispstat(TXT,varargin)
 %     'keepprev'  the previous message wont be overwritten. New message will start from next line,
 %     'timestamp' current time hh:mm:ss will be appended to the begining of the message.
 % Example:
-%   clc;
-%   fprintf('12345677890\n');
-%   dispstat('','init')      %Initialization. Does not print anything.
-%   dispstat('Time stamp will be written over this text.'); % First output
-%   dispstat('is current time.','timestamp','keepthis'); % Overwrites the previous output but this output wont be overwritten.
-%   dispstat(sprintf('*********\nDeveloped by %s\n*********','Kasim')); % does not overwrites the previous output
-%   dispstat('','timestamp','keepprev','keepthis'); % does not overwrites the previous output
-%   dispstat('this wont be overwriten','keepthis');
-%   dispstat('dummy dummy dummy');
-%   dispstat('final stat');
+%  clc;
+%  fprintf('12345677890\n');
+%  dispstat('','init')      %Initialization. Does not print anything.
+%  dispstat('Time stamp will be written over this text.'); % First output
+%  dispstat('is current time.','timestamp','keepthis'); % Overwrites the previous output but this output wont be overwritten.
+%  dispstat(sprintf('*********\nDeveloped by %s\n*********','Kasim')); % does not overwrites the previous output
+%  dispstat('','timestamp','keepprev','keepthis'); % does not overwrites the previous output
+%  dispstat('this wont be overwriten','keepthis');
+%  dispstat('dummy dummy dummy');
+%  dispstat('final stat');
 % % Output:
 %     12345677890
 %     15:15:34 is current time.
