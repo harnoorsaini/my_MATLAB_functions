@@ -1,7 +1,7 @@
 function my_colors = load_my_colors()
 
 % mid
-my_colors(1,:) = hex2rgb('ffbc42');
+my_colors(1,:) = hex2rgb('ffbc42'); 
 my_colors(2,:) = hex2rgb('d81159');
 my_colors(3,:) = hex2rgb('094074');
 my_colors(4,:) = hex2rgb('20a39e');
@@ -20,3 +20,5 @@ my_colors(12,:) = hex2rgb('e25186');
 my_colors(13,:) = hex2rgb('7896b3');
 my_colors(14,:) = hex2rgb('85ccca');
 my_colors(15,:) = hex2rgb('8b7d7d');
+
+disp('Red, yellow, blue, green, black')
