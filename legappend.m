@@ -39,8 +39,13 @@ function [legend_h,object_h,plot_h,text_strings] = legappend(newStrings,varargin
 % Geophysics, The University of Texas at Austin, July 2014. 
 % 
 % See also legend.
+h = findobj(gcf, 'Type', 'legend');
+newstr = [h.String {newStrings}];
+allDatah = flipud(get(gca,'children'));
+h.PlotChildren = allDatah;
+h.String = newstr;
 
-h =  findobj(gcf,'Type','axes','Tag','legend');
+%h =  findobj(gcf,'Type','axes','Tag','legend');
 
 prop.boxon = get(h,'visible');
 prop.loc = get(h,'location'); 

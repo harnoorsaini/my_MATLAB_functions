@@ -1,4 +1,5 @@
-function my_colors = load_my_colors()
+function my_colors = load_my_colors(ID)
+% yellow, red, blue, green, black
 
 % mid
 my_colors(1,:) = hex2rgb('ffbc42'); 
@@ -21,4 +22,6 @@ my_colors(13,:) = hex2rgb('7896b3');
 my_colors(14,:) = hex2rgb('85ccca');
 my_colors(15,:) = hex2rgb('8b7d7d');
 
-disp('Red, yellow, blue, green, black')
+if nargin == 1
+    my_colors = my_colors(ID,:);
+end

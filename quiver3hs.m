@@ -1,4 +1,4 @@
-function quiver3hs(X,V,SCALE)
+function quiver3hs(X,V,SCALE,STYLE)
 %QUIVER3HS Plots quiver3 for vectors V at points X
 %
 % H. Saini 05/09/18
@@ -17,6 +17,9 @@ elseif nargin == 2
 elseif nargin == 3
     quiver3(X(:,1),X(:,2),X(:,3),V(:,1),V(:,2),V(:,3),SCALE);
     axis equal    
+elseif nargin == 4
+    quiver3(X(:,1),X(:,2),X(:,3),V(:,1),V(:,2),V(:,3),SCALE,STYLE);
+    axis equal    
 else
-    error('Incorrect number of arguments, require exactly 2.');
+    error('Incorrect number of arguments, require more than 2.');
 end
