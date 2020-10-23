@@ -4,7 +4,11 @@ function quiver3hs(X,V,SCALE,STYLE)
 % H. Saini 05/09/18
 
 if size(X,2) ~= 3
-    error('X must be Nx3');
+    if isempty(X)
+        X = repmat([0,0,0],size(V,1),1);
+    else
+        error('X must be Nx3');
+    end
 elseif size(V,2) ~= 3
     error('V must be Nx3');
 end

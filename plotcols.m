@@ -1,5 +1,5 @@
 function plotcols(A,C,t)
-%PLOTFORCE plots columns of the form A(TIME,COMP1,...,COMPN), C is STYLE 
+%PLOTCOLS plots columns of the form A(TIME,COMP1,...,COMPN), C is STYLE 
 % either as color values or text
 %
 % H. Saini 19/03/20

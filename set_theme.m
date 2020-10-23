@@ -2,7 +2,7 @@ function set_theme(mode)
 
 switch mode
     case 'dark'
-        schemer_import('darksteel.prf',1);
+        schemer_import('darksteel-hs.prf',1);
     case 'light'
         schemer_import('vibrant.prf',1);
     case 'default'

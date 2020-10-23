@@ -302,7 +302,7 @@ switch preset
         interp = 'labiso';
         
     % for colours by Kenneth Moreland, see kennethmoreland.com
-    case 'div.km.BuRd' % divergent blue-red, by Kenneth Moreland
+    case 'paraview' % divergent blue-red, by Kenneth Moreland
         rgb = [0.230, 0.299, 0.754; 0.706, 0.016, 0.150];
         interp = 'mshdiv';
     case 'div.km.PuOr' % divergent purple-orange, by Kenneth Moreland
@@ -317,6 +317,26 @@ switch preset
     case 'div.km.GnRd' % divergent green-red, by Kenneth Moreland
         rgb = [0.085, 0.532, 0.201; 0.758, 0.214, 0.233];
         interp = 'mshdiv';
+    case 'plasma'
+        rgb = [ 47	0	135;
+                98	0	164;
+                146	0	166;
+                186	47	138;
+                216	91	105;
+                238	137	73;
+                246	189	39;
+                228	250	21] / 255;
+        interp = 'rgb';
+    case 'vidris'
+        rgb = [ 72	0	84;
+                79	48	127;
+                67	91	141;
+                52	127	142;
+                34	162	135;
+                61	195	108;
+                147	219	53;
+                243	233	28] / 255;
+        interp = 'rgb';
         
     % for colours by Cynthia Brewer, see colorbrewer.org
     case 'seq.cb.YlGn.3' % 3-colour sequential YlGn, by Cynthia Brewer

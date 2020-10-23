@@ -1,0 +1,9 @@
+function opt_params = opt_params(max_iter,params_0,ub,lb,fun_opt)
+
+pattern_options = optimoptions('patternsearch','MaxIterations',max_iter,...
+    'MeshTolerance',1e-6,'TolX', 1e-6,'Display','iter',...
+    'UseParallel',true,'MaxFunEvals',max_iter*10);
+
+
+opt_params=patternsearch(fun_opt,params_0,[],[],[],[],lb,ub,[],...
+    pattern_options);
